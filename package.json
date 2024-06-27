@@ -2,7 +2,10 @@
   "name": "@e-learning-platform/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx dev web",
+    "clear:cache": "nx reset"
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^10.0.2",

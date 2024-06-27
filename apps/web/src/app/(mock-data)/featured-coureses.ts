@@ -1,0 +1,73 @@
+export const featuredCoursesMockData = [
+  {
+    image:
+      'https://www.shutterstock.com/image-vector/elearning-banner-online-education-home-260nw-1694176021.jpg',
+    category: 'Photography',
+    title: 'Create An LMS Website With LearnPress',
+    instructor: 'Determined-Poitras',
+    duration: '2 Weeks',
+    students: 156,
+    price: 'Free',
+    original_price: '$29.0',
+    status: 'View More',
+  },
+  {
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTflw_ptSD1fVWIcD-S3J1dKyiPIwagQ7CMtg&s',
+    category: 'Photography',
+    title: 'Design A Website With ThimPress test test',
+    instructor: 'Determined-Poitras',
+    duration: '2 Weeks',
+    students: 156,
+    price: '$49.0',
+    original_price: '$59.0',
+    status: 'View More',
+  },
+  {
+    image:
+      'https://media.licdn.com/dms/image/D5612AQGRK8Flx6IFKQ/article-cover_image-shrink_600_2000/0/1710255368732?e=2147483647&v=beta&t=qhz-UCUAFHJ6Ha0cL7CAHk-DkswbwlreVOSo-Xn35Ik',
+    category: 'Photography',
+    title: 'Create An LMS Website With LearnPress',
+    instructor: 'Determined-Poitras',
+    duration: '2 Weeks',
+    students: 156,
+    price: 'Free',
+    original_price: '$29.0',
+    status: 'View More',
+  },
+  {
+    image: 'https://img-c.udemycdn.com/course/750x422/4077322_a979_4.jpg',
+    category: 'Photography',
+    title: 'Create An LMS Website With LearnPress',
+    instructor: 'Determined-Poitras',
+    duration: '2 Weeks',
+    students: 156,
+    price: 'Free',
+    original_price: '$29.0',
+    status: 'View More',
+  },
+  {
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeoqmEC3hmAuYOLEFCitbByZz66sQxr4Gaiw&s',
+    category: 'Photography',
+    title: 'Create An LMS Website With LearnPress',
+    instructor: 'Determined-Poitras',
+    duration: '2 Weeks',
+    students: 156,
+    price: 'Free',
+    original_price: '$29.0',
+    status: 'View More',
+  },
+  {
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheIJRXrtM0o7a_M0cWT_jSQEjtys_XpiY0A&s',
+    category: 'Photography',
+    title: 'Create An LMS Website With LearnPress',
+    instructor: 'Determined-Poitras',
+    duration: '2 Weeks',
+    students: 156,
+    price: 'Free',
+    original_price: '$29.0',
+    status: 'View More',
+  },
+];

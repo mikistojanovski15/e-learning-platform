@@ -1,7 +1,13 @@
+import FeaturedCoursesComponent from './(components)/FeaturedCoursesComponent';
+import MainBodyComponent from './(components)/MainBodyComponent';
+import TopCategoriesComponent from './(components)/TopCategoriesComponent';
+
 export default function Index() {
   return (
     <>
-      <h2>Lets build e learning app</h2>
+      <MainBodyComponent />
+      <TopCategoriesComponent />
+      <FeaturedCoursesComponent />
     </>
   );
 }
