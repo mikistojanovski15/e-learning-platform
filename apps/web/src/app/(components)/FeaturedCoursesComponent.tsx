@@ -20,7 +20,6 @@ const FeaturedCoursesComponent = () => {
           return (
             <FeaturedCard
               key={i}
-              // @ts-ignore  wip for now
               image={course.image}
               category={course.category}
               title={course.title}
