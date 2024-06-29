@@ -26,6 +26,9 @@ const FeaturedCard = ({
 }: FeaturedCardInterface) => {
   return (
     <div className="relative p-5 border border-gray-200 rounded-lg hover:shadow-lg cursor-pointer">
+      <div className="absolute top-0 left-4 bg-black px-4 py-2 text-white rounded-md">
+        {category}
+      </div>
       <Image
         className="w-full object-auto h-40 rounded-lg"
         src={image}
@@ -44,7 +47,21 @@ const FeaturedCard = ({
         <div className="flex items-center justify-between">
           <span className="">
             <span className="line-through px-1">{original_price}</span>
-            {price}
+            {/* One way */}
+            {/* {price === 'Free' ? (
+              <span className="text-green-500">{price}</span>
+            ) : (
+              <span className="text-orange-500">{price}</span>
+            )} */}
+
+            {/* Another way */}
+            <span
+              className={
+                price === 'Free' ? 'text-green-500' : 'text-orange-500'
+              }
+            >
+              {price}
+            </span>
           </span>
           <button>View More</button>
         </div>
