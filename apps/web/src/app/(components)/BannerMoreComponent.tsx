@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerMoreComponent = () => {
   return (
-    <div className="mt-10 bg-[url('/banner-more.svg')] w-full bg-auto md:bg-contain bg-no-repeat">
+    <div className="mt-10 bg-[url('/banner-more.svg')] h-[320px] w-full bg-auto md:bg-cover bg-no-repeat">
       <div className="pt-20 px-10">
         <h6 className="text-amber-900 text-xl">GET MORE POWER FROM</h6>
         <h4 className="bold text-3xl">LearnPress Add-Ons</h4>

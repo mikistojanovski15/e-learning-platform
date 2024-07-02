@@ -1,4 +1,6 @@
+import Footer from './(components)/Footer';
 import Header from './(components)/Header';
+import UseScrollToTop from './(hooks)/useScrollToTop';
 import './global.css';
 
 // Metadata e for optimization for SEO -- search engine optimization
@@ -15,9 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="mx-auto max-w-7xl">
-        <Header />
-        {children}
+      <body>
+        <div className="mx-auto max-w-screen-2xl">
+          <Header />
+          {children}
+        </div>
+        <Footer />
+        <UseScrollToTop />
       </body>
     </html>
   );
