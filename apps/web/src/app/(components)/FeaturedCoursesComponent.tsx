@@ -19,6 +19,7 @@ const FeaturedCoursesComponent = () => {
         {featuredCoursesMockData.map((course, i) => {
           return (
             <FeaturedCard
+              viewMethod="grid"
               key={i}
               image={course.image}
               category={course.category}

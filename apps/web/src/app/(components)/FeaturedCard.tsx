@@ -12,6 +12,7 @@ interface FeaturedCardInterface {
   original_price?: string;
   status?: string;
   viewMoreBtn?: boolean;
+  viewMethod: string;
 }
 
 const FeaturedCard = ({
@@ -24,10 +25,15 @@ const FeaturedCard = ({
   price,
   original_price,
   status,
+  viewMethod,
   viewMoreBtn = true, // ova znaci ako nemu pushtam preku prosps false ova sekogash ke bide by default true
 }: FeaturedCardInterface) => {
   return (
-    <div className="relative p-5 border border-gray-200 rounded-lg hover:shadow-lg cursor-pointer">
+    <div
+      className={`${
+        viewMethod === 'list' ? 'flex flex-row justify-between w-full' : ''
+      } relative p-5 border border-gray-200 rounded-lg hover:shadow-lg cursor-pointer`}
+    >
       {/* {category ? (
         <div className="absolute top-0 left-4 bg-black px-4 py-2 text-white rounded-md">
           {category}
@@ -43,7 +49,7 @@ const FeaturedCard = ({
       )}
 
       <Image
-        className="w-full object-auto h-40 rounded-lg"
+        className={`${viewMethod} === 'grid' && "w-full object-auto h-40 rounded-lg"`}
         src={image}
         alt={title}
         width={400}
