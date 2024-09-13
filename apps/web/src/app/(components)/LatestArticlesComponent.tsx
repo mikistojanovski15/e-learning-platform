@@ -20,7 +20,7 @@ const LatestArticlesComponent = () => {
       <div className="grid grid-cols-3 gap-4">
         {latestArchivesMockData.map((course, i) => {
           return (
-            <FeaturedCard
+            <FeaturedCard viewMethod='grid'
               key={i}
               image={course.image}
               title={course.title}

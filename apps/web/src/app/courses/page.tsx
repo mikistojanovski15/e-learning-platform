@@ -11,6 +11,7 @@ import {
   Price,
   Review,
 } from '../(mock-data)/category';
+import CategoryCheckBoxComponent from '../(components)/CategoryCheckBoxComponent';
 
 // rafce -- react, arrow, functional --> export.
 const Courses = () => {
@@ -55,60 +56,14 @@ const Courses = () => {
         {/* trena da pushtite naslov text */}
         {/* Treba da pushtite tip na kategorija intrukir -- ova e array */}
 
-        <h4 className="text-xl font-semibold">Category Card</h4>
-
-        {categoryTagMockData.courseCategories.map((course: CourseCategory) => (
-          <div>
-            <input type="checkbox" />
-            <span>
-              {course.name}
-              {course.count}
-            </span>
-          </div>
-        ))}
-        {/* do tuka */}
+        <CategoryCheckBoxComponent title='CategoryCard' data={categoryTagMockData.courseCategories}/> 
+       <CategoryCheckBoxComponent title='Instructors' data={categoryTagMockData.instructors}/> 
         {/* ova da go stavime vo posebna komponenta */}
 
-        <h4 className="text-xl font-semibold text-gray-600">Instructors</h4>
-        {categoryTagMockData.instructors.map((instructor: Instructor) => (
-          <div>
-            <input type="checkbox" />
-            <span>
-              {instructor.name}
-              {instructor.count}
-            </span>
-          </div>
-        ))}
-        <h4 className="text-xl font-semibold text-gray-600">Level</h4>
-        {categoryTagMockData.level.map((level: Level) => (
-          <div>
-            <input type="checkbox" />
-            <span>
-              {level.name}
-              {level.count}
-            </span>
-          </div>
-        ))}
-        <h4 className="text-xl font-semibold text-gray-600">Price</h4>
-        {categoryTagMockData.price.map((price: Price) => (
-          <div>
-            <input type="checkbox" />
-            <span>
-              {price.name}
-              {price.count}
-            </span>
-          </div>
-        ))}
-        <h4 className="text-xl font-semibold text-gray-600">Review</h4>
-        {categoryTagMockData.review.map((review: Review) => (
-          <div>
-            <input type="checkbox" />
-            <span>
-              {review.stars}
-              {review.count}
-            </span>
-          </div>
-        ))}
+        <CategoryCheckBoxComponent title='Level' data={categoryTagMockData.level}/> 
+        <CategoryCheckBoxComponent title='Price' data={categoryTagMockData.price}/> 
+        <CategoryCheckBoxComponent title='Review' data={categoryTagMockData.review}/> 
+       
       </div>
     </div>
   );
